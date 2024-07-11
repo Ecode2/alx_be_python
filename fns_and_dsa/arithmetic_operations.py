@@ -10,5 +10,5 @@ def perform_operation(num1, num2, operation):
         case 'divide':
             if num2 <= 0:
                 return "Cant divide by zero"
-            return num1 + num2
+            return num1 / num2
         
