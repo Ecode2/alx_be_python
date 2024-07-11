@@ -5,7 +5,7 @@ def calculate_future_date():
     return timedelta(days=future_date)
 
 def display_current_datetime():
-    current_date = datetime.utcnow()
+    current_date = datetime.now()
     print(current_date)
 
     days = calculate_future_date()
