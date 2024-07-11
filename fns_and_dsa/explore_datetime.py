@@ -9,10 +9,10 @@ def display_current_datetime():
     print(f"Current date and time: {current_date.strftime('%Y-%m-%d %H:%M:%S')}")
 
     days = calculate_future_date()
-    new_date = current_date + days
-    new_date.strftime('%Y-%m-%d')
+    future_date = current_date + days
+    future_date.strftime('%Y-%m-%d')
 
-    print(f"Future date: {new_date.date()}")
+    print(f"Future date: {future_date}")
 
 if __name__ == "__main__":
     display_current_datetime()
