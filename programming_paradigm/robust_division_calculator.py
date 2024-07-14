@@ -1,8 +1,8 @@
 
 def safe_divide(numerator, denominator):
     try:
-        float(numerator)
-        float(denominator)
+        numerator = float(numerator)
+        denominator = float(denominator)
     except ValueError:
         return "Error: Please enter numeric values only."
     
