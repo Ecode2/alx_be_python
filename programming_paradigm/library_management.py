@@ -8,7 +8,7 @@ class Book:
     def check_out(self):
         self._is_checked_out = True
 
-    def check_in(self):
+    def return_book(self):
         self._is_checked_out = False
 
     def __str__(self) -> str:
@@ -32,7 +32,7 @@ class Library:
         """ [book._is_checked_out == False for book in self._books if book.title == title] """
         for book in self._books:
             if book.title == title: 
-                book.check_in()
+                book.return_book()
 
     def list_available_books(self):
         """ [print(book.__str__()) for book in self._books if book._is_checked_out == False] """
