@@ -31,7 +31,7 @@ class Library:
         
         for book in self.books:
             #print(book.__qualname__)
-            match book.__class__.__name__:
+            match book.__qualname__:
                 case "Book":
                     print(f"Book: {book.title} by {book.author}")
 
