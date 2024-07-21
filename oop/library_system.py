@@ -31,13 +31,12 @@ class Library:
         
         for book in self.books:
             #print(book.__qualname__)
-            match book.__qualname__:
-                case "Book":
-                    print(f"Book: {book.title} by {book.author}")
+            if book.__qualname__ == "Book":
+                print(f"Book: {book.title} by {book.author}")
 
-                case "EBook":
-                    print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}")
+            elif book.__qualname__ == "EBook":
+                print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}")
 
-                case "PrintBook":
-                    print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
+            elif book.__qualname__ == "PrintBook":
+                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
                 
