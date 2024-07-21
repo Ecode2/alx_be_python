@@ -5,6 +5,9 @@ class Book:
         self.author = author
         self.__qualname__ = "Book"
 
+    def __str__(self) -> str:
+        return "Book"
+
 class EBook(Book):
     def __init__(self, title, author, file_size):
         super().__init__(title, author)
